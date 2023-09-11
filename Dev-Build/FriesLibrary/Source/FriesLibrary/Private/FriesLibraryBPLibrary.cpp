@@ -156,24 +156,24 @@ FString UFriesLibraryBPLibrary::RandomLetter(const bool bToUpper)
 	TArray<FString> Letters = { TEXT("A"), TEXT("B"), TEXT("C"), TEXT("D"), TEXT("E"), TEXT("F"), TEXT("G"), TEXT("H"), TEXT("I"),
 	TEXT("J"), TEXT("K"), TEXT("L"), TEXT("M"), TEXT("N"), TEXT("O"), TEXT("P"), TEXT("Q"), TEXT("R"), TEXT("S"), TEXT("T"), TEXT("U"), 
 	TEXT("V"), TEXT("W"), TEXT("X"), TEXT("Y"), TEXT("Z")};
-
+	
 	// Get random letter
 	const int32 RandIndex = FMath::RandRange(0, Letters.Num() - 1);
 
 	// Check if it's lowercase or uppercase
-	return bToUpper ? Letters[RandIndex].ToUpper() : Letters[RandIndex].ToLower();
+	return bToUpper ? Letters[RandIndex] : Letters[RandIndex].ToLower();
 }
 
 FString UFriesLibraryBPLibrary::RandomLetterInRange(int32 Min, int32 Max, const bool bToUpper)
 {
 	// Verify if the Max value are big (> 26)
-	if (Max > 26)
+	if (Max > 25 || Max < 1)
 	{
-		Max = 26;
+		Max = 25;
 	}
 
 	// Verify if the Min value are small (< 0)
-	if (Min < 0)
+	if (Min < 0 || Min > 24)
 	{
 		Min = 0;
 	}
@@ -268,13 +268,13 @@ EFlEngineScalabilityLevel UFriesLibraryBPLibrary::GetScalabilityLevel(const EFlE
 		Level = GameUserSettings->GetShadingQuality();
 		break;
 	}
-	return (EFlEngineScalabilityLevel)Level;
+	return static_cast<EFlEngineScalabilityLevel>(Level);
 }
 
 void UFriesLibraryBPLibrary::ModifyScalability(const EFlEngineScalabilityType ScalabilityToModify, const EFlEngineScalabilityLevel NewScalabilityLevel, const bool bSaveInConfig)
 {
 	// Convert level byte to int32
-	const int Level = (int)NewScalabilityLevel;
+	const int Level = static_cast<int>(NewScalabilityLevel);
 
 	// Get game user settings ref
 	UGameUserSettings* GameUserSettings = UGameUserSettings::GetGameUserSettings();
@@ -492,17 +492,15 @@ void UFriesLibraryBPLibrary::SetGraphicsRHI(const EGraphicsRHI GraphicsRHI)
 	// Get current platform
 	const FString TargetPlataform = UGameplayStatics::GetPlatformName();
 
-	// Used later
-	FString DefaultGraphicsRHI;
-
 	// Set string variables to apply later
 	const FString RHI_DX11(TEXT("DefaultGraphicsRHI_DX11"));
 	const FString RHI_DX12(TEXT("DefaultGraphicsRHI_DX12"));
-	const FString RHI_VULKAN(TEXT("DefaultGraphicsRHI_Vulkan"));
+	const FString RHI_Vulkan(TEXT("DefaultGraphicsRHI_Vulkan"));
 
 	// This code just valid for Windows, sorry
 	if (TargetPlataform == "Windows")
 	{
+		FString DefaultGraphicsRHI;
 		// Set current RHI in GConfig
 		GConfig->GetString(TEXT("/Script/WindowsTargetPlatform.WindowsTargetSettings"), TEXT("DefaultGraphicsRHI"), DefaultGraphicsRHI, GEngineIni);
 		switch (GraphicsRHI)
@@ -520,6 +518,15 @@ void UFriesLibraryBPLibrary::SetGraphicsRHI(const EGraphicsRHI GraphicsRHI)
 			if (DefaultGraphicsRHI != "DefaultGraphicsRHI_DX12")
 			{
 				GConfig->SetString(TEXT("/Script/WindowsTargetPlatform.WindowsTargetSettings"), TEXT("DefaultGraphicsRHI"), *RHI_DX12, GEngineIni);
+				GConfig->Flush(true, GEngineIni);
+				return;
+			}
+			return;
+
+		case EGraphicsRHI::RHI_Vulkan:
+			if (DefaultGraphicsRHI != "DefaultGraphicsRHI_Vulkan")
+			{
+				GConfig->SetString(TEXT("/Script/WindowsTargetPlatform.WindowsTargetSettings"), TEXT("DefaultGraphicsRHI"), *RHI_Vulkan, GEngineIni);
 				GConfig->Flush(true, GEngineIni);
 				return;
 			}
