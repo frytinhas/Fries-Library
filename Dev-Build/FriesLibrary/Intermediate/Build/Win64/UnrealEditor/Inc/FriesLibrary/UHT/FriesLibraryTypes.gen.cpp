@@ -42,18 +42,25 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 	const UECodeGen_Private::FEnumeratorParam Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enumerators[] = {
 		{ "EGraphicsRHI::RHI_DX11", (int64)EGraphicsRHI::RHI_DX11 },
 		{ "EGraphicsRHI::RHI_DX12", (int64)EGraphicsRHI::RHI_DX12 },
+		{ "EGraphicsRHI::RHI_Vulkan", (int64)EGraphicsRHI::RHI_Vulkan },
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FriesLibrary|Data|Enums" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Enumeration\n// Enumeration used to get/set current RHI mode\n" },
+#endif
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 		{ "RHI_DX11.DisplayName", "DirectX 11" },
 		{ "RHI_DX11.Name", "EGraphicsRHI::RHI_DX11" },
 		{ "RHI_DX12.DisplayName", "DirectX 12" },
 		{ "RHI_DX12.Name", "EGraphicsRHI::RHI_DX12" },
+		{ "RHI_Vulkan.DisplayName", "Vulkan" },
+		{ "RHI_Vulkan.Name", "EGraphicsRHI::RHI_Vulkan" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enumeration\nEnumeration used to get/set current RHI mode" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::EnumParams = {
@@ -62,11 +69,11 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		"EGraphicsRHI",
 		"EGraphicsRHI",
 		Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enum_MetaDataParams), Z_Construct_UEnum_FriesLibrary_EGraphicsRHI_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_FriesLibrary_EGraphicsRHI()
 	{
@@ -105,13 +112,17 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FriesLibrary|Data|Enums" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Enumeration used to get/set current ambient occlusion method\n" },
+#endif
 		{ "GTAO.DisplayName", "GTAO" },
 		{ "GTAO.Name", "EFlAmbientOcclusion::GTAO" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 		{ "SSAO.DisplayName", "SSAO" },
 		{ "SSAO.Name", "EFlAmbientOcclusion::SSAO" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enumeration used to get/set current ambient occlusion method" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::EnumParams = {
@@ -120,11 +131,11 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		"EFlAmbientOcclusion",
 		"EFlAmbientOcclusion",
 		Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enum_MetaDataParams), Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_FriesLibrary_EFlAmbientOcclusion()
 	{
@@ -166,7 +177,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FriesLibrary|Data|Enums" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Enumeration used to get/set current Anti-aliasing method\n" },
+#endif
 		{ "FXAA.DisplayName", "FXAA" },
 		{ "FXAA.Name", "EFlAntiAliasingMethod::FXAA" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
@@ -176,7 +189,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		{ "None.Name", "EFlAntiAliasingMethod::None" },
 		{ "TAA.DisplayName", "TAA" },
 		{ "TAA.Name", "EFlAntiAliasingMethod::TAA" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enumeration used to get/set current Anti-aliasing method" },
+#endif
 		{ "TSR.DisplayName", "TSR" },
 		{ "TSR.Name", "EFlAntiAliasingMethod::TSR" },
 	};
@@ -187,11 +202,11 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		"EFlAntiAliasingMethod",
 		"EFlAntiAliasingMethod",
 		Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enum_MetaDataParams), Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_FriesLibrary_EFlAntiAliasingMethod()
 	{
@@ -233,7 +248,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FriesLibrary|Data|Enums" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Enumeration used to get/set current global illumination method\n" },
+#endif
 		{ "Lumen.DisplayName", "Lumen" },
 		{ "Lumen.Name", "EFlGlobalIlluminationMethod::Lumen" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
@@ -245,7 +262,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		{ "RTGI.Name", "EFlGlobalIlluminationMethod::RTGI" },
 		{ "SSGI.DisplayName", "SSGI" },
 		{ "SSGI.Name", "EFlGlobalIlluminationMethod::SSGI" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enumeration used to get/set current global illumination method" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FEnumParams Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::EnumParams = {
@@ -254,11 +273,11 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		"EFlGlobalIlluminationMethod",
 		"EFlGlobalIlluminationMethod",
 		Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enum_MetaDataParams), Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_FriesLibrary_EFlGlobalIlluminationMethod()
 	{
@@ -308,7 +327,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		{ "AntiAliasing.Name", "EFlEngineScalabilityType::AntiAliasing" },
 		{ "BlueprintType", "true" },
 		{ "Category", "FriesLibrary|Data|Enums" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Create EEngineScalabilityType\n" },
+#endif
 		{ "Effects.DisplayName", "Effects" },
 		{ "Effects.Name", "EFlEngineScalabilityType::Effects" },
 		{ "Foliage.DisplayName", "Foliage" },
@@ -328,7 +349,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		{ "Shadows.Name", "EFlEngineScalabilityType::Shadows" },
 		{ "Textures.DisplayName", "Textures" },
 		{ "Textures.Name", "EFlEngineScalabilityType::Textures" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create EEngineScalabilityType" },
+#endif
 		{ "ViewDistance.DisplayName", "ViewDistance" },
 		{ "ViewDistance.Name", "EFlEngineScalabilityType::ViewDistance" },
 	};
@@ -339,11 +362,11 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		"EFlEngineScalabilityType",
 		"EFlEngineScalabilityType",
 		Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enum_MetaDataParams), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityType()
 	{
@@ -387,7 +410,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		{ "Category", "FriesLibrary|Data|Enums" },
 		{ "Cinematic.DisplayName", "Cinematic" },
 		{ "Cinematic.Name", "EFlEngineScalabilityLevel::Cinematic" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Create EEngineScalabilityLevel\n" },
+#endif
 		{ "High.DisplayName", "High" },
 		{ "High.Name", "EFlEngineScalabilityLevel::High" },
 		{ "Low.DisplayName", "Low" },
@@ -395,7 +420,9 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		{ "Medium.DisplayName", "Medium" },
 		{ "Medium.Name", "EFlEngineScalabilityLevel::Medium" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create EEngineScalabilityLevel" },
+#endif
 		{ "Ultra.DisplayName", "Ultra" },
 		{ "Ultra.Name", "EFlEngineScalabilityLevel::Ultra" },
 	};
@@ -406,11 +433,11 @@ void EmptyLinkFunctionForGeneratedCodeFriesLibraryTypes() {}
 		"EFlEngineScalabilityLevel",
 		"EFlEngineScalabilityLevel",
 		Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enumerators,
-		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enumerators),
 		RF_Public|RF_Transient|RF_MarkAsNative,
+		UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enumerators),
 		EEnumFlags::None,
 		(uint8)UEnum::ECppForm::EnumClass,
-		METADATA_PARAMS(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enum_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enum_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enum_MetaDataParams), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel_Statics::Enum_MetaDataParams)
 	};
 	UEnum* Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel()
 	{
@@ -496,95 +523,99 @@ template<> FRIESLIBRARY_API UScriptStruct* StaticStruct<FAllScalabilitys>()
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "FriesLibrary|Data|Structs" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Structures\n// Create structure used by OverallScalability\n" },
+#endif
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Structures\nCreate structure used by OverallScalability" },
+#endif
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FAllScalabilitys>();
 	}
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance = { "ViewDistance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, ViewDistance), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance = { "ViewDistance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, ViewDistance), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing = { "AntiAliasing", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, AntiAliasing), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing = { "AntiAliasing", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, AntiAliasing), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_AntiAliasing_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing = { "PostProcessing", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, PostProcessing), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing = { "PostProcessing", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, PostProcessing), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_PostProcessing_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows = { "Shadows", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, Shadows), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows = { "Shadows", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, Shadows), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shadows_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination = { "GlobalIllumination", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, GlobalIllumination), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination = { "GlobalIllumination", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, GlobalIllumination), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_GlobalIllumination_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections = { "Reflections", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, Reflections), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections = { "Reflections", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, Reflections), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Reflections_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures = { "Textures", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, Textures), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures = { "Textures", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, Textures), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Textures_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects = { "Effects", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, Effects), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects = { "Effects", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, Effects), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Effects_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage = { "Foliage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, Foliage), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_MetaData)) }; // 4267033782
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage = { "Foliage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, Foliage), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Foliage_MetaData) }; // 2465420634
+	const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_MetaData[] = {
 		{ "Category", "FriesLibrary|Data|Structs" },
 		{ "ModuleRelativePath", "Public/FriesLibraryTypes.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading = { "Shading", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, nullptr, nullptr, STRUCT_OFFSET(FAllScalabilitys, Shading), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_MetaData)) }; // 4267033782
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading = { "Shading", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FAllScalabilitys, Shading), Z_Construct_UEnum_FriesLibrary_EFlEngineScalabilityLevel, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_MetaData), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_Shading_MetaData) }; // 2465420634
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FAllScalabilitys_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewProp_ViewDistance,
@@ -612,14 +643,15 @@ template<> FRIESLIBRARY_API UScriptStruct* StaticStruct<FAllScalabilitys>()
 		nullptr,
 		&NewStructOps,
 		"AllScalabilitys",
-		sizeof(FAllScalabilitys),
-		alignof(FAllScalabilitys),
 		Z_Construct_UScriptStruct_FAllScalabilitys_Statics::PropPointers,
 		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::PropPointers),
+		sizeof(FAllScalabilitys),
+		alignof(FAllScalabilitys),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FAllScalabilitys_Statics::Struct_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAllScalabilitys_Statics::PropPointers) < 2048);
 	UScriptStruct* Z_Construct_UScriptStruct_FAllScalabilitys()
 	{
 		if (!Z_Registration_Info_UScriptStruct_AllScalabilitys.InnerSingleton)
@@ -628,24 +660,24 @@ template<> FRIESLIBRARY_API UScriptStruct* StaticStruct<FAllScalabilitys>()
 		}
 		return Z_Registration_Info_UScriptStruct_AllScalabilitys.InnerSingleton;
 	}
-	struct Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics
+	struct Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::EnumInfo[] = {
-		{ EGraphicsRHI_StaticEnum, TEXT("EGraphicsRHI"), &Z_Registration_Info_UEnum_EGraphicsRHI, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4276546937U) },
-		{ EFlAmbientOcclusion_StaticEnum, TEXT("EFlAmbientOcclusion"), &Z_Registration_Info_UEnum_EFlAmbientOcclusion, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 609859939U) },
-		{ EFlAntiAliasingMethod_StaticEnum, TEXT("EFlAntiAliasingMethod"), &Z_Registration_Info_UEnum_EFlAntiAliasingMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1923940926U) },
-		{ EFlGlobalIlluminationMethod_StaticEnum, TEXT("EFlGlobalIlluminationMethod"), &Z_Registration_Info_UEnum_EFlGlobalIlluminationMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3709339133U) },
-		{ EFlEngineScalabilityType_StaticEnum, TEXT("EFlEngineScalabilityType"), &Z_Registration_Info_UEnum_EFlEngineScalabilityType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2178813699U) },
-		{ EFlEngineScalabilityLevel_StaticEnum, TEXT("EFlEngineScalabilityLevel"), &Z_Registration_Info_UEnum_EFlEngineScalabilityLevel, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4267033782U) },
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::EnumInfo[] = {
+		{ EGraphicsRHI_StaticEnum, TEXT("EGraphicsRHI"), &Z_Registration_Info_UEnum_EGraphicsRHI, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2761940311U) },
+		{ EFlAmbientOcclusion_StaticEnum, TEXT("EFlAmbientOcclusion"), &Z_Registration_Info_UEnum_EFlAmbientOcclusion, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1444725162U) },
+		{ EFlAntiAliasingMethod_StaticEnum, TEXT("EFlAntiAliasingMethod"), &Z_Registration_Info_UEnum_EFlAntiAliasingMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4226385385U) },
+		{ EFlGlobalIlluminationMethod_StaticEnum, TEXT("EFlGlobalIlluminationMethod"), &Z_Registration_Info_UEnum_EFlGlobalIlluminationMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1260209559U) },
+		{ EFlEngineScalabilityType_StaticEnum, TEXT("EFlEngineScalabilityType"), &Z_Registration_Info_UEnum_EFlEngineScalabilityType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1969207356U) },
+		{ EFlEngineScalabilityLevel_StaticEnum, TEXT("EFlEngineScalabilityLevel"), &Z_Registration_Info_UEnum_EFlEngineScalabilityLevel, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2465420634U) },
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::ScriptStructInfo[] = {
-		{ FAllScalabilitys::StaticStruct, Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewStructOps, TEXT("AllScalabilitys"), &Z_Registration_Info_UScriptStruct_AllScalabilitys, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAllScalabilitys), 502479216U) },
+	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::ScriptStructInfo[] = {
+		{ FAllScalabilitys::StaticStruct, Z_Construct_UScriptStruct_FAllScalabilitys_Statics::NewStructOps, TEXT("AllScalabilitys"), &Z_Registration_Info_UScriptStruct_AllScalabilitys, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAllScalabilitys), 3757111110U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_2691263600(TEXT("/Script/FriesLibrary"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_1250750119(TEXT("/Script/FriesLibrary"),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::ScriptStructInfo),
-		Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::ScriptStructInfo),
+		Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

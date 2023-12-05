@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-FriesLibrary.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\Wise Labs\Programming\Frontline New Revolution\Intermediate\Build\Win64\x64\FrontlineEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"F:\Wise Labs\Programming\Frontline New Revolution\Plugins\Fries-Library\Dev-Build\FriesLibrary\Intermediate\Build\Win64\x64\UnrealEditor\Development\FriesLibrary\Module.FriesLibrary.cpp.obj"
+"F:\Wise Labs\Programming\Frontline New Revolution\Plugins\Fries-Library\Dev-Build\FriesLibrary\Intermediate\Build\Win64\x64\UnrealEditor\Development\FriesLibrary\Default.rc2.res"
+/OUT:"F:\Wise Labs\Programming\Frontline New Revolution\Plugins\Fries-Library\Dev-Build\FriesLibrary\Intermediate\Build\Win64\x64\UnrealEditor\Development\FriesLibrary\UnrealEditor-FriesLibrary.lib"
