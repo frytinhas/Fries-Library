@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FRIESLIBRARY_FriesLibraryTypes_generated_h
 
-#define FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_77_GENERATED_BODY \
+#define FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h_78_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FAllScalabilitys_Statics; \
 	FRIESLIBRARY_API static class UScriptStruct* StaticStruct();
 
@@ -22,12 +22,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> FRIESLIBRARY_API UScriptStruct* StaticStruct<struct FAllScalabilitys>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Fries_Games_Studios_Plugins_Fries_Library_Dev_Build_FriesLibrary_HostProject_Plugins_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h
+#define CURRENT_FILE_ID FID_Frontline_New_Revolution_Plugins_Fries_Library_Dev_Build_FriesLibrary_Source_FriesLibrary_Public_FriesLibraryTypes_h
 
 
 #define FOREACH_ENUM_EGRAPHICSRHI(op) \
 	op(EGraphicsRHI::RHI_DX11) \
-	op(EGraphicsRHI::RHI_DX12) 
+	op(EGraphicsRHI::RHI_DX12) \
+	op(EGraphicsRHI::RHI_Vulkan) 
 
 enum class EGraphicsRHI : uint8;
 template<> struct TIsUEnumClass<EGraphicsRHI> { enum { Value = true }; };

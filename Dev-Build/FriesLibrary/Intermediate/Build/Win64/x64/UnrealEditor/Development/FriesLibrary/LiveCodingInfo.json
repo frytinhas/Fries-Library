@@ -1,0 +1,14 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.FriesLibrary.cpp.obj": [
+			"FriesLibrary.init.gen.cpp.obj",
+			"FriesLibraryBPLibrary.gen.cpp.obj",
+			"FriesLibraryTypes.gen.cpp.obj",
+			"OverallScalability.gen.cpp.obj",
+			"FriesLibrary.cpp.obj",
+			"FriesLibraryBPLibrary.cpp.obj",
+			"OverallScalability.cpp.obj"
+		]
+	}
+}

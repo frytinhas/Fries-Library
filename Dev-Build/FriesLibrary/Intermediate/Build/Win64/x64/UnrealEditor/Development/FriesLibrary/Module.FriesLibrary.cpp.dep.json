@@ -1,0 +1,41 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\frieslibrary\\module.frieslibrary.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\wise labs\\programming\\frontline new revolution\\intermediate\\build\\win64\\x64\\frontlineeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\frieslibrary\\definitions.frieslibrary.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\frieslibrary.init.gen.cpp",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\frieslibrarybplibrary.gen.cpp",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\public\\frieslibrarybplibrary.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\public\\frieslibrarytypes.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\frieslibrarytypes.generated.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\frieslibrarybplibrary.generated.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\frieslibrarytypes.gen.cpp",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\overallscalability.gen.cpp",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\public\\overallscalability.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\intermediate\\build\\win64\\unrealeditor\\inc\\frieslibrary\\uht\\overallscalability.generated.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\private\\frieslibrary.cpp",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\public\\frieslibrary.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\private\\frieslibrarybplibrary.cpp",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetstringlibrary.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetstringlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gameusersettings.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameusersettings.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h",
+            "f:\\wise labs\\programming\\frontline new revolution\\plugins\\fries-library\\dev-build\\frieslibrary\\source\\frieslibrary\\private\\overallscalability.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
